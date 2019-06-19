@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PhotoList from './PhotoList/PhotoList';
 import config from './config';
 
 export default class App extends React.Component {
@@ -30,7 +31,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <p>Placeholder</p>
+      <PhotoList photos={this.state.photos} />
     )
   }
 }

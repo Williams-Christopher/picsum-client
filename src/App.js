@@ -13,6 +13,7 @@ export default class App extends React.Component {
     this.makeApiRequest();
   }
 
+  // take a page and limit param, defaulting to 1 and 10 respectively
   makeApiRequest() {
     let url = config.API_ENDPOINT;
     fetch(url + '?page='+ this.state.page + '&limit=10')

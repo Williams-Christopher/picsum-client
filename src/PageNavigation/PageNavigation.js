@@ -5,11 +5,13 @@ class PageNavigation extends React.Component {
     render() {
         return (
             <nav>
-                <ul>
-                    {this.props.pages.map((p, i) => {
-                        return <li key={i} onClick={() => this.props.requestPageNumber(p)}>{p}</li>
-                    })}
-                </ul>
+                <div className='page_list_container'>
+                    <ul className='page_list'>
+                        {this.props.pages.map((p, i) => {
+                            return <li className='page_list_number' key={i} onClick={() => this.props.requestPageNumber(p)}><a className='page_list_link' href='#'>{p}</a></li>
+                        })}
+                    </ul>
+                </div>
             </nav>
         );
     }

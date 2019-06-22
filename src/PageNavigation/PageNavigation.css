@@ -1,0 +1,18 @@
+.page_list_container {
+    
+}
+
+.page_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page_list_numbers {
+
+}
+
+.page_list_link {
+    margin: 0 10px;
+}

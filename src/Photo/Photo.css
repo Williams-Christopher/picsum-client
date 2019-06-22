@@ -2,6 +2,8 @@ figure {
     box-shadow: 0 10px 10px 5px  rgba(25, 25, 25, .2), 0 15px 15px 5px rgba(175, 175, 175, .2);
 }
 
-figure img {
+.photo_display {
     display: block;
+    margin: 40px 20px;
+    box-shadow: 0 10px 10px 5px  rgba(25, 25, 25, .2), 0 15px 15px 5px rgba(175, 175, 175, .2);
 }

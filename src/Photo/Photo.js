@@ -2,12 +2,18 @@ import React from 'react';
 import './Photo.css';
 
 export default function Photo(props) {
+    let maxWidth = window.innerWidth / 3;
+    let factor = props.width / maxWidth;
+    let imageWidth = Math.round(props.width / factor);
+    let imageHeight = Math.round(props.height / factor);
+    
     return (
-        <figure>
-            <img src={props.download_url}
-                alt={`Author: ${props.author}`} width={props.width / 4 > 600 ? 600 : props.width / 4}
-                height={props.height / 4 > 400 ? 400 : props.height / 4}
+
+            <img className='photo_display'
+                src={props.download_url}
+                alt={`Author: ${props.author}`}
+                width={imageWidth}
+                height={imageHeight}
             />
-        </figure>
     );
 }
